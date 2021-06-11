@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Python Bootcamp</title>
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-4 fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand text-warning">Python Bootcamp</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">What You'll Learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#questions" class="nav-link">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+
+    <!-- Showcase -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-4 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <h1>Become a <span class="text-warning">Python Programmer</span></h1>
+                    <p class="lead my-4">
+                        Learn Python like a Professional by Starting from the basics and going all the way to creating your own applications and games.
+                        This is the most comprehensive, yet straight-forward, course for the Python programming language!
+                    </p>
+                    <button class="btn btn-warning btn lg" data-bs-toggle="modal" data-bs-target="#enroll">Start from Here</button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="img/code.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter-->
+    <section class="bg-warning  text-light p-4">
+        <div class="container">
+            <div class="d-md-flex justify-content-between align-items-center">
+                <h3 class="mb-3 mb-md-0">
+                    Sign Up For Our Newsletter
+                </h3>
+                <div class="input-group news-input">
+                    <input type="text" class="form-control" placeholder="Enter Email Here" >
+                    <button class="btn btn-dark btn-lg" type="button" id="button-addon2">Sign Up</button>
+                  </div>                  
+            </div>
+        </div>
+    </section>
+
+    <!-- Boxes -->
+
+    <section class="p-5">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md">
+                    <div class="card bg-dark text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-laptop"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                    Online
+                            </h3>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, ipsa. Ut animi ab voluptatum eum?
+                            </p>
+                            <a href="#" class="btn btn-warning">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <div class="h1 mb-3">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <h3 class="card-title mb-3">
+                                Offline
+                            </h3>
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, ipsa. Ut animi ab voluptatum eum?
+                            </p>
+                            <a href="#" class="btn btn-warning">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-light text-dark">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-person-square"></i>
+                        </div>
+                        <h3 class="card-title mb-3">
+                            Hybrid
+                        </h3>
+                        <p class="card-text">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, ipsa. Ut animi ab voluptatum eum?
+                        </p>
+                        <a href="#" class="btn btn-warning">Read More</a>
+                    </div>
+                </div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learn -->
+
+    <section id="learn" class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+               <div class="col-md">
+                   <img src="img/python-logo-generic.svg" alt="" class="img-fluid">
+               </div>
+               <div class="col-md p-5">
+                   <h2>The Fundamentals</h2>
+                   <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quo sequi ab, voluptates molestias expedita.</p>
+                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, suscipit, magni sed optio dolor illum nisi, ipsam odio quo quia impedit! Ab.</p>
+                   <a href="#" class="btn btn-warning mt-3">
+                       <i class="bi bi-chevron-right">Read More</i>
+                   </a> 
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <section id="learn" class="p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+               <div class="col-md p-5">
+                   <h2>Learn Django</h2>
+                   <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. In quo sequi ab, voluptates molestias expedita.</p>
+                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, suscipit, magni sed optio dolor illum nisi, ipsam odio quo quia impedit! Ab.</p>
+                   <a href="#" class="btn btn-success mt-3">
+                       <i class="bi bi-chevron-right">Read More</i>
+                   </a> 
+                </div>
+                <div class="col-md">
+                    <img src="img/django-logo-negative.svg" alt="" class="img-fluid">
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQS -->
+
+    <section class="p-5" id="questions">
+        <div class="container">
+            <h2 class="text-center mb-4">Frequently Asked Questions (FAQs)</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-1">
+                        How long is the bootcamp?
+                    </button>
+                  </h2>
+                  <div id="question-1" class="accordion-collapse collapse" data-bs-parent="#questions">
+                    <div class="accordion-body">Monday - Friday for 14 weeks.
+
+                        Your days will run 9a-4:30p and will include lectures, working sessions, workshops and breakout group work. Some afternoons we'll offer the option to for career talks after hours and mentoring opportunities. The lab is also yours to work in 24/7. </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-2">
+                        Do I have to quit my job to do this full-time for 14 weeks?
+                    </button>
+                  </h2>
+                  <div id="question-2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Coding bootcamps are a unique form of education, and there's a reason that we call them "bootcamps": they're intense periods of hard work designed to yield breakthrough progress and big  payoffs on the other side. To be successful you have to be focused and dedicated.  We ask that all applicants be prepared to either take time off or step away fully from their jobs. </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-3">
+                        Do I have to know code before I apply?
+                    </button>
+                  </h2>
+                  <div id="question-3" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">The short answer is "no". But it's always a good sign if somebody has made some strides towards learning the craft on their own. A lot of our students start teaching themselves online and decide to take the next steps with our program. What we really care about is your natural aptitude because when we have the right raw materials, we can make a great programmer.
+                        
+                  </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+    <section id="instructor" class="p-5 bg-warning">
+        <div class="container">
+            <h2 class="text-center text-white">Our Instructors</h2>
+            <p class="lead text-center text-white-mb-5">
+                Our Instructors all have 5+ years working as a Python Developer in the Industry
+            </p>
+            <div class="row g-4 p-2 align-items-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/14.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">John Doe</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur dolore hic.</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/51.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Bao-Yu</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur dolore hic.</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/men/16.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Joseph Al</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur dolore hic.</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="https://randomuser.me/api/portraits/women/21.jpg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title mb-3">Jill Detal</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo consequatur dolore hic.</p>
+                            <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h2 class="text-center">
+                        Contact Info
+                    </h2>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Main Location:</span> 23 Hilton Street, Washington DC.
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Phone:</span> (555) 555-5555
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Phone:</span> (777) 777-7777
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Enrollment Email:</span> pythbtcp@questn.cin
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Student Email:</span> K1231@hotmail.cln
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <div id='map'></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; 2021 Python Bootcamp</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle yellow h1"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+        <div class="modal fade" id="enroll" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="enrollLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Fill Out This To Join Today</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">
+                                First Name:
+                            </label>
+                            <input type="text" class="form-control" id="first-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="col-form-label">
+                                Last Name:
+                            </label>
+                            <input type="text" class="form-control" id="last-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email-id" class="col-form-label">
+                                Email ID:
+                            </label>
+                            <input type="text" class="form-control" id="email-id">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone-no" class="col-form-label">
+                                Phone Number:
+                            </label>
+                            <input type="tel" class="form-control" id="phone-no">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1Ijoia2F2ZGluMSIsImEiOiJja3BzZXZybGwwMXVqMnFxdzh1eGF6cG84In0.lVeZ067SvAuoo5u1lZCDCw';
+        var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-71.060982, 42.35725],
+        zoom: 18,
+        });
+    </script>    
+
+</body>
+</html>
